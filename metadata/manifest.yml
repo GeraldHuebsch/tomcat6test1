@@ -5,9 +5,9 @@ Description: "An experimental CAS Open cartridge."
 Version: '0.1'
 Source-Url: git@github.com:GeraldHuebsch/tomcat6test1.git
 License: "None"
-Vendor: CAS
+Vendor: cas
 Cartridge-Version: 0.0.1
-Cartridge-Vendor: CAS
+Cartridge-Vendor: cas
 Categories:
   - service
   - web_framework
