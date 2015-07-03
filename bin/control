@@ -5,8 +5,9 @@ PATH=/bin/:/usr/bin:$PATH
 source $OPENSHIFT_CARTRIDGE_SDK_BASH
 
 function start {
-    export CATALINA_BASE=$OPENSHIFT_HOMEDIR/catalinabase
-	$CATALINA_BASE/bin/catalina.sh run
+#   export CATALINA_BASE=$OPENSHIFT_HOMEDIR/catalinabase
+echo $CATALINA_BASE/bin/catalina.sh run
+   $CATALINA_BASE/bin/catalina.sh run
 }
 
 function stop {
