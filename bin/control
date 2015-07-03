@@ -1,0 +1,38 @@
+#!/bin/bash -e
+
+PATH=/bin/:/usr/bin:$PATH
+
+source $OPENSHIFT_CARTRIDGE_SDK_BASH
+
+function start {
+    export CATALINA_BASE=$OPENSHIFT_HOMEDIR/catalinabase
+	$CATALINA_BASE/bin/catalina.sh run
+}
+
+function stop {
+	$CATALINA_BASE/bin/catalina.sh stop
+}
+
+function restart {
+    echo "not yet implemented"
+}
+
+function catchall {
+    echo "not yet implemented"
+}
+
+case "$1" in
+  start)       start ;;
+  stop)        stop ;;
+  restart)     restart ;;
+  status)      status ;;
+  reload)      catchall ;;
+  tidy)        catchall ;;
+  pre-build)   catchall ;;
+  build)       catchall ;;
+  deploy)      catchall ;;
+  post-deploy) catchall ;;
+  *)           exit 0
+esac
+
+exit 0

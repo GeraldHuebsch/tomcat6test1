@@ -1,0 +1,31 @@
+Name: casopen
+Cartridge-Short-Name: CASOPEN
+Display-Name: CAS Open Cartridge
+Description: "An experimental CAS Open cartridge."
+Version: '0.1'
+License: "None"
+Vendor: CAS Software AG
+Cartridge-Version: 0.0.1
+Cartridge-Vendor: CAS Software AG
+Categories:
+  - service
+  - web_framework
+Provides:
+  - caspen
+Cart-Data:
+Group-Overrides:
+  - components:
+    - casopen
+Subscribes:
+  set-db-connection-info:
+    Type: "NET_TCP:db:connection-info"
+    Required: false
+Endpoints:
+  - Private-IP-Name:   IP
+    Private-Port-Name: PORT
+    Private-Port:      8080
+    Public-Port-Name:  PROXY_PORT
+    Mappings:
+      - Frontend:      ""
+        Backend:       ""
+        Options:       { websocket: false }
