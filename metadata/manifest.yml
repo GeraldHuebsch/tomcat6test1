@@ -3,6 +3,7 @@ Cartridge-Short-Name: CASOPEN
 Display-Name: CAS Open Cartridge
 Description: "An experimental CAS Open cartridge."
 Version: '0.1'
+Source-Url: git@github.com:GeraldHuebsch/tomcat6test1.git
 License: "None"
 Vendor: CAS Software AG
 Cartridge-Version: 0.0.1
