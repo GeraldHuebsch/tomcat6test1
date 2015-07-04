@@ -6,7 +6,7 @@ export CATALINA_HOME=$OPENSHIFT_HOMEDIR'casopen/catalinahome'
 export CATALINA_BASE=$OPENSHIFT_HOMEDIR'casopen/catalinabase'
 
 function start {
-    $CATALINA_BASE/bin/catalina.sh run
+    $CATALINA_BASE/bin/catalina.sh run &
 }
 
 function stop {
