@@ -2,5 +2,7 @@
 locked_files:
 - env/
 - env/*
+- catalinahome/
+- catalinahome/*
 processed_templates:
 - '**/*.erb'
