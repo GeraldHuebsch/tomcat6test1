@@ -2,10 +2,10 @@
 PATH=/bin/:/usr/bin:$PATH
 
 source $OPENSHIFT_CARTRIDGE_SDK_BASH
+export CATALINA_HOME=$OPENSHIFT_HOMEDIR'casopen/catalinahome'
+export CATALINA_BASE=$OPENSHIFT_HOMEDIR'casopen/catalinabase'
 
 function start {
-    export CATALINA_HOME=$OPENSHIFT_HOMEDIR'casopen/catalinahome'
-    export CATALINA_BASE=$OPENSHIFT_HOMEDIR'casopen/catalinabase'
     $CATALINA_BASE/bin/catalina.sh run
 }
 
