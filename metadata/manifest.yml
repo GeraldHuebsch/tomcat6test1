@@ -24,7 +24,7 @@ Subscribes:
 Endpoints:
   - Private-IP-Name:   HTTP_IP
     Private-Port-Name: HTTP_PORT
-    Private-Port:      8080
+    Private-Port:      8081
     Public-Port-Name:  HTTP_PROXY_PORT
     Mappings:
       - Frontend:      ""
