@@ -33,7 +33,3 @@ Endpoints:
   - Private-IP-Name:   HTTP_IP
     Private-Port-Name: SERVER_PORT
     Private-Port:      8001
-    Mappings:
-      - Frontend:      ""
-        Backend:       ""
-        Options:       { websocket: false }
